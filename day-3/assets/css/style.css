@@ -35,3 +35,36 @@ body {
     text-align: center;
     margin-right: 80px;
 }
+
+.btn-contact:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.card {
+    border: 3px solid black;
+    background-color: #ffffff;
+    width: 450px;
+    height: 500px;
+    margin: 90px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card h1 {
+    margin: 20px 0 15px 0;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card table {
+    width: 100%;
+    margin: 15px 0 0 0;
+}
