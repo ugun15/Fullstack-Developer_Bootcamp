@@ -45,8 +45,6 @@ function submitData() {
     `Name : ${inputName}\nEmail : ${inputEmail}\nPhone : ${inputPhone}\nSubject : ${inputSubject}\nMessage : ${inputMessage}`
   );
 
-  // const myemail = "arre@gmail.com";
-
   let a = document.createElement("a");
   a.href = `mailto:${inputEmail}?subject=${inputSubject}&body=Hello my name ${inputName}, and my number ${inputPhone} ${inputMessage}`;
   a.click();
