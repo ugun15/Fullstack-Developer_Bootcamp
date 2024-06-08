@@ -1,0 +1,347 @@
+.add-project {
+    max-width: 100%;
+    width: 520px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.add-project h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea,
+.form-group input[type="file"] {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 25px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-group input[type="file"] {
+    padding: 4px;
+    height: 30px;
+}
+
+.form-group.technologies label {
+    margin-bottom: 0;
+}
+
+.form-group .tech-checkboxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.tech-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 5px;
+    width: 25px;
+    height: 18px;
+}
+
+.button-input {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.button-input button {
+    padding: 8px 20px;
+    font-size: 15px;
+    width: 115px;
+    background-color: #ff4500;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button-input button:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.flex-item input[type="text"],
+.flex-item input[type="date"] {
+    display: flex;
+    max-width: 100%;
+    width: 213px;
+    margin: 0 50px 0 0px;
+}
+
+hr.line {
+    margin: 30px auto;
+    width: 80%;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    background-color: #f5f5f5;
+    padding: 70px;
+}
+
+.blog-list-items {
+    max-width: 400px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: auto auto;
+}
+
+.blog-content {
+    padding: 10px;
+    width: 100%;
+}
+
+.blog-content h2 {
+    font-size: 14px;
+}
+
+.blog-content .detail-blog {
+    margin-top: 3px;
+    color: #808080;
+}
+
+.blog-content .list-deskripsi {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    line-height: 20px;
+    margin: 20px auto;
+}
+
+.blog-content .list-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-items: start;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.program-icon {
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.program-icon .icon {
+    margin-right: 10px;
+    font-size: 25px;
+    color: #000000;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background-color: orangered;
+    color: #ffffff;
+}
+
+.btn-delete:hover {
+    background-color: #701100;
+    color: #ffffff;
+}
+
+.title-list {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 700px) {
+    .add-project {
+        max-width: 100%;
+        width: 535px;
+    }
+
+    .flex-item input[type="text"], 
+    .flex-item input[type="date"] {
+        width: 210px;
+        margin-right: 0px;
+    }
+
+    .blog-list {
+        gap: 40px;
+        padding: 50px;
+    }
+
+    .blog-list-items {
+        max-width: 300px;
+    }
+
+    .blog-image img {
+        height: 180px;
+    }
+
+    .blog-content {
+        padding: 3px;
+    }
+
+    .blog-content .detail-blog {
+        font-size: 13px;
+    }
+
+    .blog-content .list-deskripsi {
+        margin: 15px auto;
+        font-size: 14px;
+    }
+
+    .blog-content .list-technologies {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .program-icon {
+        margin: 20px 0;
+        gap: 5px;
+    }
+
+    .program-icon .icon {
+        margin-right: 15px;
+        font-size: 22px;
+    }
+
+    .flex-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .add-project {
+        max-width: 80%;
+        width: 520px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .flex-item input[type="text"], 
+    .flex-item input[type="date"] {
+        display: flex;
+        max-width: 100%;
+        width: 160px;
+        margin-right: 0px;
+    }
+
+    .blog-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+        background-color: #f5f5f5;
+        padding: 40px;
+    }
+
+    .blog-list-items {
+        max-width: 225px;
+    }
+
+    .blog-image img {
+        height: 140px;
+    }
+
+    .blog-content {
+        padding: 3px;
+    }
+
+    .blog-content .detail-blog {
+        font-size: 12px;
+    }
+
+    .blog-content .list-deskripsi {
+        margin: 10px auto;
+        font-size: 14px;
+    }
+
+    .blog-content .list-technologies {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .program-icon {
+        margin: 15px 0;
+        gap: 5px;
+    }
+
+    .program-icon .icon {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    .flex-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+    }
+}
