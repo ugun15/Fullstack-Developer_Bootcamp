@@ -1,0 +1,21 @@
+/* Style Form Input Control */
+.form-control {
+    background-color: #ffffff;
+    box-shadow: 0 3px 0 0 rgba(0,0,0,0.1);
+}
+
+/* Style text area */
+.inputcontact {
+    resize: none;
+    height: 150px;
+}
+
+/* Style color button */
+.btn-dark {
+  --bs-btn-color: #ffffff !important;
+  --bs-btn-bg: #ff4500!important;
+  --bs-btn-border-color: #ff4500;
+  --bs-btn-hover-bg: #ffffff !important;
+  --bs-btn-hover-border-color: #ff4500 !important;
+  --bs-btn-hover-color: #ff4500;
+}

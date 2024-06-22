@@ -1,0 +1,23 @@
+/* Style Color Button Ratting */
+.btn-danger {
+    --bs-btn-color: #ffffff !important;
+    --bs-btn-bg: #ff4500!important;
+    --bs-btn-border-color: #ff4500;
+    --bs-btn-hover-bg: #ffffff !important;
+    --bs-btn-hover-border-color: #ff4500 !important;
+    --bs-btn-hover-color: #ff4500;
+}
+
+.btn-light {
+    --bs-btn-color: #ff4500 !important;
+    --bs-btn-bg: #ffffff!important;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-bg: #ff4500 !important;
+    --bs-btn-hover-border-color: #ff4500 !important;
+    --bs-btn-hover-color: #ffffff;
+}
+
+/* Style color Testimonial Comment Card */
+.text-color {
+    color: #ff4500;
+}

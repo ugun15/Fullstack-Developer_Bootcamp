@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>My Project</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/myproject.css" />
+  </head>
+  <body>
+    
+    <!-- Content Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img
+            src="assets/img/icon/logo-dubways.png"
+            alt="Logo Dubways"
+            style="height: 50px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/myproject">My Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/testimonial">Testimonials</a>
+            </li>
+          </ul>
+          <a href="/contact">
+            <button class="btn btn-outline-danger" type="submit">
+              Contact Me
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Content End -->
+    
+    <!-- Content Add Project -->
+    <div class="container">
+      <h1 class="text-center fw-bold my-5">ADD MY PROJECT</h1>
+      <form class="row mx-auto" id="projectForm" onsubmit="submitmyProject(event)">
+        <div class="col-md-8 offset-md-2">
+          <label for="project" class="form-label fw-bold">Project Name</label>
+          <input type="text" class="form-control" data-bs-theme="light" type="text" id="projectName" name="inputProject" required />
+        </div>
+        <div class="col-md-4 offset-md-2 my-3">
+          <label for="startDate" class="form-label fw-bold">Start Date</label>
+          <input type="date" class="form-control" data-bs-theme="light" id="startDate" name="Datetime" required />
+        </div>
+        <div class="col-md-4 my-3">
+          <label for="endDate" class="form-label fw-bold">End Date</label>
+          <input type="date" class="form-control" data-bs-theme="light" id="endDate" name="Datetime" required />
+        </div>
+        <div class="col-md-8 offset-md-2 my-2">
+          <label for="inputDescription"
+            class="form-label fw-bold">Description</label>
+          <textarea class="form-control inputcontact" data-bs-theme="light" id="description" name="description" required></textarea>
+        </div>
+        <label class="col-md-8 offset-md-2 my-1 form-label fw-bold">Technologies</label>
+        <div class="col-md-8 offset-md-2 my-3">
+          <div class="technologies">
+            <div class="left-tech">
+              <input type="checkbox" name="technologies" value="Node Js" id="nodejs">
+              <label class="form-check-label me-4">Node Js</label>
+              <input type="checkbox" name="technologies" value="Next Js" id="nextjs">
+              <label class="form-check-label">Next Js</label>
+            </div>
+            <div class="right-tech my-3">
+              <input type="checkbox" name="technologies" value="React Js" id="reactjs">
+              <label class="form-check-label me-4">React Js</label>
+              <input type="checkbox" name="technologies"
+              value="TypeScript" id="typescript">
+              <label class="form-check-label">TypeScript</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 offset-md-2 mb-2">
+          <label for="image" class="form-label fw-bold">Project Name</label>
+          <input type="file" class="form-control" data-bs-theme="light" id="uploadImage" name="image">
+        </div>
+        <div class="col-md-8 offset-md-2 d-flex justify-content-end mt-4 mb-5">
+          <input type="submit" value="Submit" class="btn btn-dark w-25 rounded-pill" id="submitButton">
+        </div>
+      </form>
+    </div>
+    <!-- End Content Add Project -->
+
+    <!-- <hr class="line" /> -->
+    <!-- <h2 class="title-list">MY PROJECT</h2> -->
+    
+    <!-- Projects Display -->
+    <div id="content" class="blog-list"></div>
+
+    <script src="assets/js/myproject.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>

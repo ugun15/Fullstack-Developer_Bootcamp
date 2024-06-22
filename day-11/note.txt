@@ -1,0 +1,43 @@
+// Alasan kenapa pake template engine : 
+1. Sebagai referensi bahwa ada template engine dan banyak jenisnya
+2. Ini digunakan sebagai bahan pembelajaran awal sebelum ke advance javascript
+3. Template engine mudah dipahami untuk pemula
+4. Penerapannya digunakan untuk pemanggilan di javascript(index.js), jika tidak pake template engine halamannya tidak bisa dirender di JS nya.
+
+// Diperusahaan biasanya : 
+1. Tidak menggunakan template engine
+2. Biasanya pake framework
+3. Biasanya pake Typescript
+4. Framework itu sudah overpower
+5. Server : Laravel, Nest.JS
+6. Client : Next.JS, Vite.JS (React)
+
+// Tahapan untuk memberhentikan proses server yang berjalan bisa tekan / klik pada keyboard "Ctrl + C"
+// Untuk menjalankan sebuah server dengan menggunakan "nodemon" -> "npm start" (bisa lakukan cek di package.json)  
+
+// Ini adalah inisiasi cara pemanggilan package, yaitu express. Untuk pemanggilan package lain carannya sama.
+// Tinggal ganti nama sesuai yang mau dipanggil di (')
+    const express = require('express')
+
+// Ini variable yang akan kita gunakan sebagai pengganti pemanggilan dari package express
+    const app = express()
+
+// Ini adalah route atau jalan untuk pemanggilan sebuah fungsi 
+
+// req -> Request, res -> Response
+// req -> Ini adalah sebuah fungsi untuk mengambil data inputan dari user(nanti)
+// req -> Misal pada inputan register login, inputan data form
+
+// res -> adalah fungsi untuk mengembalikan response dari server ke user setelah di proses
+// res -> misal setelah menerima login -> mengembalikan res(response) -> "yeay anda berhasil login" dan juga bisa mengembalikan response token
+
+// Kalau sebuah inputan form mengembalikan response data anda sudah kami terima
+    app.get('/', function (req, res) {
+        // Ini fungsi untuk mendapatkan sebuah result dari server kita
+    res.send('Hello World')
+    })
+
+// Ini adalah inisiasi port(gerbang / pintu) yang akan kita gunakan
+    app.listen(3000) 
+    // 3000 ini adalah secara default kita gunakan karna tidak terpakai di server kita
+    // 5000 ada batasan untuk penggunaan port dalam Node.JS

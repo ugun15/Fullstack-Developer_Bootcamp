@@ -1,0 +1,53 @@
+* Pembahasan Mengenai Database : 
+  - Charvar = Adalah sebuah tipe data dengan menerima inputan huruf, angka, karakter, simbol
+  - 255 = Yaitu sebuah panjang kolom menerima inputannya (batas) -> maksimal batasnya 255 pada database
+
+* Apa itu ORM (Object Relation Mapping) = Adalah sebuah teknik yang bisa kita pakai untuk menerapkan kodingan SQL didalam aplikasi kita
+
+* Apa itu Sequelize(tools) = ORM yang membantu kita untuk berkomunikasi ke database
+
+* Tahapan - tahapan install tools Sequelize : 
+    - Masuk pada terminal VSC dengan sesuaikan terlebih dahulu terkait foldernya 
+    - Ketikan pada terminal untuk install "npm i sequelize" pada link -> https://www.npmjs.com/package/sequelize?activeTab=readme
+    - Melakukan install kembali dengan pemilihan database yang akan digunakan
+      Contoh beberapa Install penggunaan Database dengan tools "Sequelize" : 
+      + Db "PostgresSQL"            -> <// npm install --save pg pg-hstore > (Pilihan install tools nya karena menggunakan Db "Postgres").
+      + Db "MySQL"                  -> <// npm install --save mysql2 >
+      + Db "MariaDB"                -> <// npm install --save mariadb >
+      + Db "SQLlite"                -> <// npm install --save sqlite3 >
+      + Db "Microsoft SQL Server"   -> <// npm install --save tedious >
+      + Db "Oracle Database"        -> <// npm install --save oracledb >
+    - Jika sudah di install lalu melakukan pemanggilan package nya dengan ketikan pada file "index.js" -> 'const {sequelize} = require("sequelize");'
+
+* "npx" -> ini seperti "npm" init, berfungsi menginisiasi penggunaan dari Sequelize 
+* Tahapan-tahapan yang lain seperti membuat "models" -> 'dikarenakan sudah mendefinisikan untuk pemanggilan dari package nya'.
+  yang biasanya kita menggunakan "npm" kita akan eksekusi data yang ada di package, menggunakan "npx" ini akan melakukan inisiasi penggunaan dari 'Sequelize' : 
+  - Ketikan manual atau copy paste pada terminal untuk install dengan "npm install --save-dev sequelize-cli" pada link -> https://sequelize.org/docs/v7/cli/
+  - Masukkan kembali pada terminal untuk install dengan "npx sequelize-cli init" -> yang nantinya akan ada tambahan folder seperti "models", "migrations", "seeders"
+
+* File "index.js" pada folder "models" -> Yang akan berfungsi untuk mengatur semua apa yang akan kita definisikan / buat, sebuah model nya.
+  secara otomatis akan diproses oleh "index.js" yang ada pada folder "models" -> intinya adalah sebuah pemprosesan. 
+  pada folder "models" yang akan menampung file untuk pembuatan dari model
+
+* Folder "seeders" -> Kalau disaat ingin membuat sebuah inputan langsung kedalam Database nya, nanti masuk nya ke "seeders"
+
+* Folder "migrations" -> Ini akan ada sebuah file ketika menjalankan untuk terhubung ke Database nya, nanti file nya masuk ke "migrations"
+
+* Folder "config" dengan didalamnya file "config.json" -> Menangani sambungannya kesebuah Database
+
+* Cara pertama membuat sebuah "Model" dan (Migration)
+  - Ketikan pada terminal dengan sebagai berikut :
+    # using npm
+    "npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string" -> Link : https://sequelize.org/docs/v7/cli/
+  - Ini adalah untuk membuat model baru berdasarkan namanya yaitu "User" 
+  - Jadi jika setiap membuat model baru akan selalu otomatis di bikinin file migration nya
+
+* Cara menjalankan sebuah "Migration" 
+  - Ketikan pada terminal dengan sebagai berikut : 
+    # using npm
+    "npx sequelize-cli db:migrate"
+  - migration yang akan diproses oleh sequelize dengan mengtranslate kode kita menjadi kode query yang diterima oleh database
+
+* Fungsi yang ada pada database sebuah : 
+  - "createdAt" -> Adalah waktu kapan dibuatnya
+  - "updateAt" -> Adalah waktu kapan diupdatenya

@@ -1,0 +1,90 @@
+/* Profile Card */
+.rounded {
+    min-height: 350px;
+}
+
+/* Style card */
+.project-card {
+    background-color: #ffffff !important;
+    width: 100%;
+}
+
+.project-card img {
+   height: 270px;
+   object-fit: cover;
+}
+
+/* Style profile section */
+.custom-section {
+    background-color: #e9ecef;
+    margin: 60px auto;
+}
+
+/* Style icon social media */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Style icon myproject */
+.icon2 i,
+.icon2 svg {
+    transition: transform 0.2s ease;
+}
+
+.icon2 i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+} 
+
+.icon2 svg:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+} 
+
+/* Style ukuran button */
+.card-body .btn {
+    width: 220px;
+  }
+
+/* Style color button */
+.btn-warning {
+    color: #000000 !important;
+    background-color: #ffcd39 !important;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    color: #ffffff !important;
+    background-color: #cc9a06 !important;
+}
+
+.btn-danger {
+    color: #fff !important;
+    background-color: #b02a37 !important;
+    font-weight: 600;
+}
+
+.btn-danger:hover {
+    background-color: #58151c !important;
+}

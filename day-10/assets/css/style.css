@@ -1,0 +1,34 @@
+/* Style background color body */
+body {
+    --bs-body-bg: #c6ced1;
+}
+
+/* style navbar dan container */
+.navbar .container-fluid {
+    margin: auto 50px;
+}
+
+/* style jarak kelompok item */
+.navbar-nav {
+    gap: 25px;
+}
+
+/* style color pada text link */
+.nav-item a:hover {
+    color : #ff4500 !important;
+}
+
+/* Style color text link class active */
+.active {
+    color: #ff4500 !important;
+}
+
+/* Style color button */
+.btn-outline-danger {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: #ff4500;
+    --bs-btn-border-color: #ff4500;
+    --bs-btn-hover-color: #ff4500;
+    --bs-btn-hover-bg: #ffffff;
+    --bs-btn-hover-border-color: #ff4500;
+}

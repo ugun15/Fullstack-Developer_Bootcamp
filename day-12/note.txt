@@ -1,0 +1,7 @@
+Cara melakukan install new folder "node_modules" 
+ - Masuk ke terminal VSC pada keyboard -> (CTRL + SHIFT + `)
+ - Sesuaikan folder dari pada terminal terlebih dahulu 
+ - Jika bingung bisa cek di package pada file "package.json" -> package yang sudah terinstall di project yang kita pakai 
+   yang ada pada file "package.json"
+ - Melakukan intall folder "node_modules" dengan ketikan pada terminal -> 'npm i'
+ - Jika sudah terinstall lalu akan muncul secara otomatis untuk folder "node_modules". 
