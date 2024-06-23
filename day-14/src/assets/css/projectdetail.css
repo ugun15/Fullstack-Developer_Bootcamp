@@ -1,0 +1,22 @@
+/* Style card */
+.project-card {
+    background-color: #ffffff !important;
+    width: 100%;
+}
+
+/* Style icon myproject */
+
+.icon2 i,
+.icon2 svg {
+    transition: transform 0.2s ease;
+}
+
+.icon2 i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+} 
+
+.icon2 svg:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+} 
